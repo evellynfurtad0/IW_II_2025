@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 14</title>
+</head>
+<body>
+    <h1>Exercicio 14 - Caixa Eletronico</h1>    <!-- isso deu trabalho p pensar -->
+    <script>
+       var valor = parseInt(prompt("Digite o valor que você deseja sacar"));  
+       var nota100 = 0;
+       var nota50 = 0;
+       var nota20 = 0;
+       var nota10 = 0;
+       var nota5 = 0;
+       var nota1 = 0;
+       while (valor > 0) {
+         while(valor >= 100){
+          valor = valor - 100;
+          nota100++;
+         }
+         while(valor >= 50){
+          valor = valor - 50;
+          nota50++;
+         }
+         while(valor >= 20){
+          valor = valor- 20;
+          nota20++;
+         }
+         while(valor >= 10){
+          valor = valor - 10;
+          nota10++;
+         }
+         while(valor >= 5){
+          valor = valor - 5;
+          nota5++;
+         }
+         while(valor >= 1){
+          valor = valor - 1;
+          nota1++;
+         }
+       }
+       alert("Notas 100: "+nota100+" Notas 50: "+nota50+" Notas 20: "+nota20+" Notas 10: "+nota10+" Notas 5: "+nota5+" Notas 1: " +nota1)
+    </script>
+    
+</body>
+</html>

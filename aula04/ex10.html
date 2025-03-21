@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 10</title>
+</head>
+<body>
+    <h1>Exercicio 10 - Adivinhação</h1>
+    <script>
+        while (1 < 10) {
+        var num = parseInt(prompt("Digite um número de 1 a 10"));
+        if (num == 8){
+            alert("Parabens! Você encontrou o número.");
+            break;
+        }
+        else if(num == 9 ||num == 7){
+            alert("Quase");
+        }
+        else if(num <= 7){
+            alert("Maior");
+        }
+        else if(num >= 10){
+            alert("Menor");
+        }
+        }
+        
+    </script>
+</body>
+</html>

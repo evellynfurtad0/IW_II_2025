@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 7</title>
+</head>
+<body>
+    <h1>Exercicio 07 - Número Primo</h1>
+    <script>
+        soma = 0;
+        var num = parseInt(prompt("Digite um número para saber se é primo ou não"));
+        for (let i = 1; i <= num; i++) {
+          if (num % i == 0){
+           soma = soma + 1;
+          }    
+        }
+        if (soma == 2){
+            alert("o número "+num+" é um número primo")
+        }
+        else{
+            alert("o número "+num+" não é um número primo")
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 12</title>
+</head>
+<body>
+    <h1>Exercicio 12 - Validação da Nota</h1>
+    <script>
+        var validacao = true;
+        while (validacao) {
+            var num = parseInt(prompt("Digite uma nota de 0 a 10"));
+            if ( num >= 0 && num <= 10 ){
+             alert("Logado!")
+             validacao = false;
+            }
+            else{
+             alert("Digite uma nota valida!")
+            }
+        }
+    </script>
+</body>
+</html>
