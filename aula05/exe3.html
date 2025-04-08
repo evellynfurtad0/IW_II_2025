@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 3</title>
+</head>
+
+<body>
+    <h1>Exercício 3 - Fatorial</h1>
+    <script>
+        var fatorial = 1;
+        function valor(a) {
+            for (let i = 1; i < a; a--) {
+                fatorial = fatorial * a;
+            }
+            return fatorial;
+        }
+        var num1 = parseInt(prompt("Digite um número:"));
+        let resultado = valor(num1);
+        console.log("O fatorial do número ", num1, " é", resultado);
+    </script>
+</body>
+
+</html>
