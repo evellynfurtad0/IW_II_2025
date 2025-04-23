@@ -4,6 +4,7 @@ const btnLigar = document.getElementById("ligar");
 const btnDesligar = document.getElementById("desligar");
 let titulo = document.getElementById("titulo");
 
+btnDesligar.disabled = true;
 
 // Funções para ligar e desligar a lâmpada
 function ligarLampada() {
@@ -20,6 +21,7 @@ function desligarLampada() {
    btnLigar.disabled = false;
    btnDesligar.disabled = true;
 }
+
 // Adiciona os eventos aos botões
 btnLigar.addEventListener("click", ligarLampada);
 btnDesligar.addEventListener("click", desligarLampada);

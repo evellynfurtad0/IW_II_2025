@@ -7,15 +7,15 @@ const botao03 = document.getElementById("imagem03");
 
 // Funçôes que trocam a imagem
 function imagem01() {
-  imagem.src = "img/cachorro.png";
+  imagem.src = "img/pato.png";
 }
 
 function imagem02() {
-  imagem.src = "img/gato.png";
+  imagem.src = "img/sapo.png";
 }
 
 function imagem03() {
-  imagem.src = "img/lampada_on.png";
+  imagem.src = "img/macaco.png";
 }
 
 // Associa o evento de clique
