@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Exercicio 03</title>
+</head>
+
+<body>
+   <input type="text" id="caixa" placeholder="Digite um texto" onchange="">
+   <input type="button" id="botao" onclick="valor()" value="ENVIAR">
+   <br>
+   <script>
+      var botao = document.getElementById("botao");
+      var caixa = document.getElementById("caixa");
+      
+      var ultimovalor = "";
+
+      function valor(){
+         var valores = caixa.value;
+         if (valores  != ultimovalor) {
+            alert("Você disse:" + valores);
+            ultimovalor = valores;
+         }
+         else{
+            alert("Ops.. Você já digitou isso, que tal trocar?")
+         }
+      }
+      //utilizar uma  variavel auxiliar
+   </script>
+</body>
+
+</html>

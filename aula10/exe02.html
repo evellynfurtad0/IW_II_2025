@@ -1,20 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercicio 02</title>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Exercicio 02</title>
 </head>
+
 <body>
-   <input type="button" id = "botao"value="REMOVER">
+   <input type="button" id="botao" onclick="confirmar()" value="REMOVER">
    <br>
    <script>
-      var botao = document.getElementById("botao"); 
+      var botao = document.getElementById("botao");
       //confirm
-      if(botao == true) {
-
+      function confirmar() {
+         let confirmacao = confirm("Tem certeza que você deseja remover?");
+         if (confirmacao == true) {
+            alert("Você confirmou")
+         }
+         else{
+            alert("Você não confirmou")
+         }
       }
       //no 3 utilizar uma  variavel auxiliar
    </script>
 </body>
+
 </html>
