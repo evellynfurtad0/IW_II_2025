@@ -17,19 +17,19 @@
         
     }
     public function adicionarEstoque($qtd){
-        if ($qntd> 0){
+        if ($qtd> 0){
             return $this->Quantidade += $qtd;
         }
         else{
-            echo"Digite um número maior que 0!";
+            echo"Digite um número maior que 0 no adicionar Estoque! <br>";
         }
     }
     public function removerEstoque($qtd){
-        if ($qntd> 0){
+        if ($qtd> 0){
             return $this->Quantidade -= $qtd;
         }
         else{
-            echo"Digite um número maior que 0!";
+            echo"Digite um número maior que 0 no remover Estoque! <br>";
         }
 
     }
